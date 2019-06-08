@@ -288,8 +288,8 @@ extern "C" void TIM6_DAC_IRQHandler(void)
 		//-----Calculate odometry
 		//====================
 		calculate_odometry();
-		msg_odometry_buffer.x = x_position_buffer;
-		msg_odometry_buffer.y = y_position_buffer;
+		msg_odometry_buffer.x = x_buffer_position;
+		msg_odometry_buffer.y = y_buffer_position;
 		msg_odometry_buffer.theta = gyro_buffer;
 
 		//===========
